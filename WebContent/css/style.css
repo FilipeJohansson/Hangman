@@ -1,0 +1,130 @@
+.navbar>.container-fluid {
+    justify-content: center;
+}
+
+.card {
+    border: 0px;
+    box-shadow: 0px 0px 7px 2px rgb(0 0 0 / 10%);
+    transition: box-shadow .15s;
+    width: 100%;
+}
+
+.card>header {
+    display: block;
+    padding: 10px;
+}
+
+.card>footer {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #1c1c1f;
+    margin-top: auto;
+}
+
+.card_reset {
+    margin-left: auto;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+#stickyman {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    padding: 10px;
+}
+
+#word {
+	letter-spacing: .9rem;
+}
+
+.wrapper {
+    width: 300px;
+    height: 300px;
+    display: block;
+    position: relative;
+}
+
+.head {
+    width: 50px;
+    height: 60px;
+    border: 5px solid black;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 21px;
+    left: 133px;
+    z-index: 1;
+    transform-origin: center bottom;
+}
+
+.torso {
+    width: 6px;
+    height: 100px;
+    border: 3px solid black;
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 156px;
+}
+
+.leftLeg {
+    width: 6px;
+    height: 100px;
+    border: 3px solid black;
+    display: block;
+    position: absolute;
+    top: 175px;
+    left: 155px;
+    transform: rotate(12deg);
+    transform-origin: top;
+}
+
+.rightLeg {
+    width: 6px;
+    height: 100px;
+    border: 3px solid black;
+    display: block;
+    position: absolute;
+    top: 175px;
+    left: 157px;
+    transform: rotate(-12deg);
+    transform-origin: top;
+}
+
+.leftArm {
+    width: 80px;
+    height: 6px;
+    border: 3px solid black;
+    display: block;
+    position: absolute;
+    top: 86px;
+    left: 77px;
+}
+
+.rightArm {
+    width: 80px;
+    height: 6px;
+    border: 3px solid black;
+    display: block;
+    position: absolute;
+    top: 86px;
+    left: 161px;
+}
+
+#state {
+    padding: 10px;
+}
+
+#state[name="won"] {
+    color: green;
+}
+
+#state[name="lose"] {
+    color: red;
+}
